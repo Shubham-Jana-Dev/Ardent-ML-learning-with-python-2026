@@ -1,0 +1,5 @@
+1. Comments:-
+a. Single line #
+b. Multi line '''/'''
+2. Variables:-
+
