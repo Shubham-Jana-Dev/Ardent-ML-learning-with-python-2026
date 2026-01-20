@@ -39,5 +39,39 @@ for i in My_list:
     print(i) # we can print all elemets of a list by using loops.
 D = {45,32,44,31,42,56} # This is a Set (uses curly braces)
 print(D)
+
+print("\n\n----Implementing type conversion from set to list in the list Function----\n\n")
 lis = list(D) # Casting/Converting the Set into a List
 print(lis)
+
+print("\n\n----Implementing logical operation between 2 lists the list Function----\n\n")
+a = [3,4,6,2,43,54,11]
+b = [5,7,8,3,6,23,43,11]
+print("\n---OR OPERATION---\n")
+l_OR = a or b 
+print(l_OR) 
+print("\n---AND OPERATION---\n") 
+l_AND = a and b 
+print(l_AND)
+
+print("\n\n----Implementing Arithmatic operation between 2 lists the sets Function----\n\n")
+print("\n---Subtraction---\n") 
+Set1 = {3,4,6,2,43,54,11}
+Set2 = {5,7,8,3,6,23,43,11}
+S_sub = Set1 - Set2
+print("Set1 - Set2 = ",S_sub)
+rev_s_sub = Set2 - Set1
+print("Set2 - Set1 = ",rev_s_sub)
+
+print("\n\n----Implementing logical operation between 2 lists the Sets Function----\n\n")
+print("\n---OR OPERATION---\n")
+Se_OR = Set1 or Set2
+print(Se_OR) 
+print("\n---AND OPERATION---\n") 
+Se_AND = Set1 and Set1
+print(Se_AND)
+
+print("\n\n----Implementing bitwise operation between 2 lists the Sets Function----\n\n")
+print("\n---XOR OPERATION---\n")
+Se_XOR = Set1^Set1
+print(Se_XOR)
