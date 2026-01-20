@@ -1,5 +1,10 @@
 # l 01
 # Find out the leargest element form a list whithout using max() function.
+'''
+When finding the maximum manually, initializing t with the first element of the list (h[0]) is much safer
+than initializing it with 0. If your list contained only negative numbers (e.g., [-10, -5, -20]), a t=0 
+starting point would give the wrong answer, but t=h[0] works every time.
+'''
 """
 h = [23,11,43,22,34,54,88,12,36,2]
 t = h[0]
@@ -48,7 +53,7 @@ print("\n\n----Implementing logical operation between 2 lists the list Function-
 a = [3,4,6,2,43,54,11]
 b = [5,7,8,3,6,23,43,11]
 print("\n---OR OPERATION---\n")
-l_OR = a or b 
+l_OR = a or b # If a is not empty, a or b returns a immediately without even looking at b.  If a is empty, a or b returns b.
 print(l_OR) 
 print("\n---AND OPERATION---\n") 
 l_AND = a and b 
@@ -65,13 +70,13 @@ print("Set2 - Set1 = ",rev_s_sub)
 
 print("\n\n----Implementing logical operation between 2 lists the Sets Function----\n\n")
 print("\n---OR OPERATION---\n")
-Se_OR = Set1 or Set2
+Se_OR = Set1 | Set2 # or we can use 'or' keyword    => Set1 | Set2 (Union): Combines all unique items from both.
 print(Se_OR) 
 print("\n---AND OPERATION---\n") 
-Se_AND = Set1 and Set1
+Se_AND = Set1 & Set1 # or we can use 'and' keyword Set1 & Set2 (Intersection): Keeps only what is common to both.
 print(Se_AND)
 
-print("\n\n----Implementing bitwise operation between 2 lists the Sets Function----\n\n")
+print("\n\n----Implementing bitwise operation between 2 sets the Sets Function----\n\n")
 print("\n---XOR OPERATION---\n")
-Se_XOR = Set1^Set1
+Se_XOR = Set1^Set2 # Set1 ^ Set2 (Symmetric Difference): Keeps items that are in one or the other, but not both.
 print(Se_XOR)
