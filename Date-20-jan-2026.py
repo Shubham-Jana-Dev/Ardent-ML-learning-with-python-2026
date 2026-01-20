@@ -80,3 +80,9 @@ print("\n\n----Implementing bitwise operation between 2 sets the Sets Function--
 print("\n---XOR OPERATION---\n")
 Se_XOR = Set1^Set2 # Set1 ^ Set2 (Symmetric Difference): Keeps items that are in one or the other, but not both.
 print(Se_XOR)
+
+print("\n\n----Understanding the use of .clear() Function----\n\n")
+Set4 = {5,7,86,3,96,23,43,11,77,97,67}
+print(Set4)
+Set4.clear() # It's mainly used for making a set empty by removing all its elements
+print(Set4)
