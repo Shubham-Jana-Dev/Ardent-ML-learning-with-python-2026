@@ -57,3 +57,17 @@ print("A ∪ B = ",A | B )
 print("A - B = ",A - B )
 # I could not do the symmetric difference :( (today's class doubt)
 # 3. Remove Duplicates: Remove duplicate elements from a list using a set.
+you_like = ["ice cream","dark Chocolates","Cookies","cold drinks","White uniform of LMG","ice cream","badge of LMG","Our blue SUV"]
+i_like = set(you_like)
+print(i_like)
+# ** just for Curiosity It was not the part of assignment.
+you_like = ["ice cream","dark Chocolates","Cookies","cold drinks","White uniform of LMG","ice cream","badge of LMG","Our blue SUV"]
+print(you_like)
+seen = []
+duplicate = []
+for i in you_like:
+    if i in seen:
+        duplicate.append(i)
+    else:
+        seen.append(i)
+print(duplicate)
