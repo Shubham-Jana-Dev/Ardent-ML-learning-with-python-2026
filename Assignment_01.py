@@ -38,3 +38,13 @@ list1.extend(list2)
 print(list1)
 list3 = list1 + list0
 print(list3)
+
+# 1. Set Creation: Create a set of vowels from a given string.
+school = "LA_MARTINIERES_SCHOOL"
+vowels = {"A"}
+vowels.clear()
+for i in school:
+    if i == "A" or i == "E" or i == "I" or i == "O" or i == "U":
+        vowels.add(i)
+print(vowels)
+
