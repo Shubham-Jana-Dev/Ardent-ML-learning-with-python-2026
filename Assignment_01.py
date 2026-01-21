@@ -13,3 +13,13 @@ for j in My_list:
         if j<0:
             My_list.remove(j)
 print(My_list)
+# 4 Element Swap: Swap the first and last elements of a list.
+The_list = [23,11,43,22,34,54,88,12,36,2]
+print(The_list)
+first_element = The_list[0]
+last_element = The_list[len(The_list)-1]
+The_list.remove(first_element)
+The_list.append(first_element)
+The_list.remove(last_element)
+The_list.insert(0,last_element)
+print(The_list)
