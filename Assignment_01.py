@@ -71,3 +71,12 @@ for i in you_like:
     else:
         seen.append(i)
 print(duplicate)
+# Set Comprehension: Create a set of squares of numbers from 1 to 10 using set comprehension.
+Set_a = {0}
+Set_a.remove(0)
+for i in range(1,11):
+          Set_a.add(i*i)
+print(Set_a)
+# Set Comprehension: Squares of numbers from 1 to 10
+Set_a = {i**2 for i in range(1, 11)}
+print(Set_a)
