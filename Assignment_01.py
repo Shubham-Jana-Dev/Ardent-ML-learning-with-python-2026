@@ -48,3 +48,12 @@ for i in school:
         vowels.add(i)
 print(vowels)
 
+# 2 Set Operations: Given two sets A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}, find the union,
+# intersection, difference (A − B), and symmetric difference.
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+print("A ∩ B = ",A & B ) 
+print("A ∪ B = ",A | B )
+print("A - B = ",A - B )
+# I could not do the symmetric difference :( (today's class doubt)
+# 3. Remove Duplicates: Remove duplicate elements from a list using a set.
