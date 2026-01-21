@@ -30,3 +30,11 @@ for i in future_blood:
        if i == "LMG or LMB":
             count += 1
 print(count)
+# 5. List Concatenation: Concatenate two lists without using the + operator.
+list1 = [1,2,3,4]
+list2 = [5,6,7,8]
+list0 = [9,10,11,12,13]
+list1.extend(list2)
+print(list1)
+list3 = list1 + list0
+print(list3)
