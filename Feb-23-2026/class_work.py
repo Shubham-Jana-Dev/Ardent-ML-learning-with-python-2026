@@ -24,8 +24,17 @@ def sort_by_numpy():
     print(sorted_list)
 sort_by_numpy()
 
+# Sort the list in reversed order.
 def sort_by_numpy_in_reversed_order():
     arr2 = np.array([11,23,12,22,45,65,78,98,76,56,35,49,59,27,44,1,4,7,9,3,78,6])
     sorted_list_reversed = np.sort(arr2)[::-1]
     print(sorted_list_reversed)
 sort_by_numpy_in_reversed_order()
+
+# Concatenate 2 lists.
+def concatenation_of_two_lists():
+    prev_list = np.array([10,20,30,40])
+    second_list = ([100,200])
+    marged_list = np.concatenate((prev_list,second_list))
+    print(marged_list)
+concatenation_of_two_lists()
