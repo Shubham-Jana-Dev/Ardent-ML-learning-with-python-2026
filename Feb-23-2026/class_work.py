@@ -22,14 +22,14 @@ def sort_by_numpy():
     arr2 = np.array([11,23,12,22,45,65,78,98,76,56,35,49,59,27,44,1,4,7,9,3,78,6])
     sorted_list = np.sort(arr2)
     print(sorted_list)
-sort_by_numpy()
+# sort_by_numpy()
 
 # Sort the list in reversed order.
 def sort_by_numpy_in_reversed_order():
     arr2 = np.array([11,23,12,22,45,65,78,98,76,56,35,49,59,27,44,1,4,7,9,3,78,6])
     sorted_list_reversed = np.sort(arr2)[::-1]
     print(sorted_list_reversed)
-sort_by_numpy_in_reversed_order()
+# sort_by_numpy_in_reversed_order()
 
 # Concatenate 2 lists.
 def concatenation_of_two_lists():
@@ -37,4 +37,11 @@ def concatenation_of_two_lists():
     second_list = ([100,200])
     marged_list = np.concatenate((prev_list,second_list))
     print(marged_list)
-concatenation_of_two_lists()
+# concatenation_of_two_lists()
+
+# Filter out the elements (>=5 and <=15) from a list.
+def filter_out_element():
+    arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
+    the_elements = arr[(arr>=5)&(arr<=15)]
+    print(the_elements)
+filter_out_element()
